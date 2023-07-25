@@ -56,7 +56,7 @@
             <img
               src="./assets/banner.png"
               alt="Header Image"
-              class="max-w-xl"
+              class="md:max-w-xl"
             />
             <!-- rating badge -->
             <div
@@ -69,8 +69,8 @@
               </div>
             </div>
           </aside>
-          <aside class="w-3/4 md:w-3/5 lg:w-5/12">
-            <h1 class="text-4xl md:text-4xl lg:text-7xl font-extrabold">
+          <aside class="md:w-3/4 w-3/5 lg:w-5/12">
+            <h1 class="text-4xl lg:text-7xl font-extrabold">
               It's good tea time at The Tea House
             </h1>
             <p class="py-6 text-gray-400 max-w-md">
@@ -87,9 +87,11 @@
       </div>
     </header>
     <main class="container mx-auto">
-      <section class="text-center my-24">
-        <h2 class="text-5xl font-bold mb-5">our Featured Products</h2>
-        <p class="lg:max-w-3xl mx-auto text-gray-400">
+      <section class="text-center my-24 px-5">
+        <h2 class="text-2xl md:text-5xl font-bold mb-5">
+          our Featured Products
+        </h2>
+        <p class="lg:max-w-3xl mx-auto text-gray-400 mb-10">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -101,7 +103,7 @@
           >
             <figure><img src="./assets/tea-1.png" alt="Green Tea" /></figure>
             <div class="card-body text-center">
-              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <h4 class="text-xl lg:text-2xl font-bold">Milk Tea</h4>
               <p class="text-gray-400">
                 Creamer could be replaced by fresh milk
               </p>
@@ -112,7 +114,7 @@
           >
             <figure><img src="./assets/tea-2.png" alt="Green Tea" /></figure>
             <div class="card-body text-center">
-              <h2 class="text-2xl font-bold">Black Tea</h2>
+              <h4 class="text-xl lg:text-2xl font-bold">Black Tea</h4>
               <p class="text-gray-400">
                 Creamer could be replaced by fresh milk
               </p>
@@ -123,7 +125,7 @@
           >
             <figure><img src="./assets/tea-3.png" alt="Green Tea" /></figure>
             <div class="card-body text-center">
-              <h2 class="text-2xl font-bold">Lemon Tea</h2>
+              <h4 class="text-xl lg:text-2xl font-bold">Lemon Tea</h4>
               <p class="text-gray-400">
                 Creamer could be replaced by fresh milk
               </p>
@@ -134,7 +136,7 @@
           >
             <figure><img src="./assets/tea-4.png" alt="Green Tea" /></figure>
             <div class="card-body text-center">
-              <h2 class="text-2xl font-bold">Green Tea</h2>
+              <h4 class="text-xl lg:text-2xl font-bold">Green Tea</h4>
               <p class="text-gray-400">
                 Creamer could be replaced by fresh milk
               </p>
@@ -142,6 +144,7 @@
           </div>
         </div>
       </section>
+
       <!-- great tea freash tea section -->
       <section class="my-24">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -152,19 +155,19 @@
             <div
               class="bg-orange-50 rounded-xl py-16 row-span-2 justify-center flex items-center"
             >
-              <img class="w-1/2" src="./assets/fresh-1.png" alt="Freshly" />
+              <img class="md:w-1/2" src="./assets/fresh-1.png" alt="Freshly" />
             </div>
             <div
-              class="bg-gray-100 py-16 px-5 row-span-2 rounded-lg justify-center flex items-center"
+              class="bg-gray-100 py-16 row-span-2 rounded-lg justify-center flex items-center"
             >
-              <img class="w-1/2" src="./assets/fresh-2.png" alt="Great" />
+              <img class="md:w-1/2" src="./assets/fresh-2.png" alt="Great" />
             </div>
             <div
               class="bg-gradient-to-r from-gray-100 to-base-100 rounded-lg"
             ></div>
           </div>
-          <div class="flex-1 text-2xl space-y-10">
-            <h3 class="text-7xl font-extrabold">
+          <div class="flex-1 text-md md:text-2xl space-y-10 px-5">
+            <h3 class="text-2xl md:text-5xl font-extrabold">
               Great Tea, Freshly Presented
             </h3>
             <p class="text-gray-400 leading-8 tracking-wider">
@@ -189,10 +192,10 @@
       </section>
       <!-- Client Section -->
       <section
-        class="my-24 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 px-32 py-32 flex flex-col justify-between items-center gap-10 md:flex-row"
+        class="my-24 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 px-5 lg:px-32 py-5 lg:py-32 flex flex-col justify-between items-center gap-10 md:flex-row"
       >
-        <div class="space-y-10">
-          <h2 class="text-5xl font-extrabold text-white">
+        <div class="space-y-5 md:space-y-10">
+          <h2 class="text-3xl md:text-5xl font-extrabold text-white">
             Meet Our Super <br />
             Clients
           </h2>
@@ -202,7 +205,11 @@
             humour, or randomised words which don't look even slightly
             believable.
           </p>
-          <button class="btn font-bold text-red-500 bg-white">Show All</button>
+          <button
+            class="btn font-bold text-red-500 bg-white text-sm md:text-md"
+          >
+            Show All
+          </button>
         </div>
         <div>
           <div class="rounded-lg p-10 bg-gray-200 relative w-11/12">
@@ -211,12 +218,18 @@
               src="./assets/client.png"
               alt="Client"
             />
-            <p class="text-gray-500 mb-10 leading-5 tracking-wider text-md">
+            <p
+              class="text-gray-500 mb-10 leading-5 tracking-wider text-xs md:text-md"
+            >
               We are providing the best and suitable home insurance services for
               the people who are interested to treatment
             </p>
-            <h4 class="font-bold text-neutral mb-2 text-xl">Ilham Huda</h4>
-            <p class="font-medium text-gray-500 text-xl">Businessman</p>
+            <h4 class="font-bold text-neutral mb-2 text-md md:text-xl">
+              Ilham Huda
+            </h4>
+            <p class="font-medium text-gray-500 text-md md:text-xl">
+              Businessman
+            </p>
             <img
               class="absolute right-8 bottom-5 w-8"
               src="./assets/circles.png"
@@ -225,7 +238,158 @@
           </div>
         </div>
       </section>
+
+      <!-- News & Events Section -->
+      <section class="py-5 md:py-16 px-5">
+        <div class="flex flex-col items-center">
+          <h2 class="text-3xl md:text-5xl font-extrabold mb-5">
+            News &amp; Events
+          </h2>
+          <p class="text-gray-400 w-11/12 md:w-3/4 text-sm md:text-md">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <div
+          class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-14"
+        >
+          <div class="card border rounded-xl pt-5">
+            <figure>
+              <img class="px-5" src="./assets/news-1.png" alt="news logo" />
+            </figure>
+            <div class="card-body">
+              <small class="text-md text-gray-400">Feb 05, 2027</small>
+              <h4 class="card-title text-xl font-extrabold">
+                Collecting 8 points for discount
+              </h4>
+              <p class="text-md text-gray-400 font-medium">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <a href="#" class="mt-5 block text-neutral text-md font-bold"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="card border rounded-xl pt-5">
+            <figure>
+              <img class="px-5" src="./assets/news-1.png" alt="news logo" />
+            </figure>
+            <div class="card-body">
+              <small class="text-md text-gray-400">Feb 05, 2027</small>
+              <h4 class="card-title text-xl font-extrabold">
+                Collecting 8 points for discount
+              </h4>
+              <p class="text-md text-gray-400 font-medium">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <a href="#" class="mt-5 block text-neutral text-md font-bold"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="card border rounded-xl pt-5">
+            <figure>
+              <img class="px-5" src="./assets/news-1.png" alt="news logo" />
+            </figure>
+            <div class="card-body">
+              <small class="text-md text-gray-400">Feb 05, 2027</small>
+              <h4 class="card-title text-xl font-extrabold">
+                Collecting 8 points for discount
+              </h4>
+              <p class="text-md text-gray-400 font-medium">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <a href="#" class="mt-5 block text-neutral text-md font-bold"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="card border rounded-xl pt-5">
+            <figure>
+              <img class="px-5" src="./assets/news-1.png" alt="news logo" />
+            </figure>
+            <div class="card-body">
+              <small class="text-md text-gray-400">Feb 05, 2027</small>
+              <h4 class="card-title text-xl font-extrabold">
+                Collecting 8 points for discount
+              </h4>
+              <p class="text-md text-gray-400 font-medium">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <a
+                href="#"
+                class="card-actions mt-5 block text-neutral text-md font-bold"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-l to-orange-50 from-red-50 text-gray-400 py-24">
+      <div class="footer flex flex-col p-10 container mx-auto">
+        <div class="footer items-center p-4 text-neutral">
+          <!-- <div class="items-center grid-flow-col"> -->
+            <img src="./assets/cup.png" alt="cup" />
+          <!-- </div> -->
+          <div
+            class="grid-flow-col gap-4 items-center md:place-self-center"
+          >
+            <p>ready to get started?</p>
+            <button
+              class="btn-md rounded-lg bg-gradient-to-l to-orange-500 from-red-500 text-white border-0"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div class="footer gap-40 flex flex-col md:flex-row p-10">
+          <div>
+            <span class="text-md font-bold text-neutral">Services</span>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+          </div>
+          <div>
+            <span class="text-md font-bold text-neutral">Company</span>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+          </div>
+          <div>
+            <span class="text-md font-bold text-neutral">Legal</span>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+          </div>
+          <div>
+            <span class="text-xl font-bold text-neutral"
+              >Subscribe to our newsletter</span
+            >
+            <div class="form-control w-72 mt-5">
+              <label class="label sr-only">Enter your email address</label>
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="bg-transparent border-0 focus:active:border-0 border-neutral border-b-[1px] w-full pb-5"
+                />
+                <button
+                  class="text-2xl text-white btn btn-circle bg-gradient-to-l from-red-600 to-orange-400 absolute -top-3 -right-14 p-0"
+                >
+                  &gt;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center">Copyright © 2023 - All right reserved</p>
+    </footer>
   </body>
 </html>
